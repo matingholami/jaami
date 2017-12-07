@@ -1,0 +1,44 @@
+* {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+body {
+	direction:RTL;
+}
+body, h1, h2, h3, h4, h5, h6,
+ .table-title, .table-sub-title, .chart strong, .chart em,
+ .login-modal-wrapper em, .share-socials-bottom a,
+ .close-share-bottom, #swipebox-caption , .ath-container{
+	font-family:sahel !important
+}
+.icon-list ul {
+    padding-right: 40px;
+    padding-left: 0;
+}
+.header-style-1 .header-logo img {
+    width: 150px;
+}
+.header-style-1 .header-logo {
+    margin-left: -75px;
+}
+.justify {
+	text-align:justify;
+}
+.one-half, .one-half-responsive {
+    width: 100%;
+}
+.thumb{
+	margin:auto;
+	max-width:100%;
+}
+.menu-text{
+	padding-right: 30px;
+	font-family:sahel;
+	font-weight:normal;
+	font-size:1em;
+}
