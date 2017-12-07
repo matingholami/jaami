@@ -16,4 +16,5 @@
     <path url="*" event="ul_event" />
   </host>
 </universal-links>
+<gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />
 </widget>
