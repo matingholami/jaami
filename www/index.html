@@ -83,6 +83,8 @@
 					<p class="justify">
                     </p>
 					<a href="#" class="button button-round one-half-responsive center-text button-xl last-column button-dark"><i class="fa fa-exclamation"></i> درباره برنامک</a>
+					<a href="#" class="button button-round one-half-responsive center-text button-xl last-column button-teal" onclick="clickbout()"><i class="fa fa-exclamation"></i> درباره برنامک</a>
+					<a href="#" class="button button-round one-half-responsive center-text button-xl last-column button-teal" onclick="exitFromApp()"><i class="fa fa-exclamation"></i> درباره برنامک</a>
 				</div>
             </div> 
         </div>
@@ -96,6 +98,9 @@
 	document.addEventListener("backbutton", onBackKeyDown, false);
 
 function onBackKeyDown() {
+    $('.simple-login-modal-content').modal();
+}
+function clickbout() {
     $('.simple-login-modal-content').modal();
 }
 function exitFromApp()
