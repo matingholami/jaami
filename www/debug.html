@@ -22,7 +22,7 @@
 <link rel="icon" type="image/png" href="images/splash/favicon-16x16.png" sizes="16x16">
 <link rel="shortcut icon" href="images/splash/favicon.ico" type="image/x-icon" /> 
     
-<title>شیخ جام</title>
+<title>درباره برنامک</title>
 
 <link href="styles/style.css"           rel="stylesheet" type="text/css">
 <link href="styles/framework.css"       rel="stylesheet" type="text/css">
@@ -35,19 +35,11 @@
 <script type="text/javascript" src="scripts/framework-plugins.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
 <script type="text/javascript" src="cordova.js"></script>
+<script type="text/javascript" src="fav.js"></script>
 </head>
 
 <body class=""> 
-<script>
-	if(!localStorage.getItem('fav')) {
-		var favdec = [];
-		var serializedfavdec = JSON.stringify(favdec);
-		storage.setItem('fav', serializedfavdec);
-	}
-	/*if(!localStorage.getItem('seen')) {
-		storage.setItem('seen', '');
-	}*/
-</script>
+
 <div id="preloader">
 	<div id="status">
         <div class="preloader-logo"></div>
@@ -62,12 +54,17 @@
     
 <div id="header-fixed" class="header-style-1">
     <a class="header-logo" href="#"><img src="images/logo-dark2.png" alt="img"></a>
-
+    <a class="header-2 open-right-sidebar" href="#"><i class="fa fa-navicon"></i></a>
 </div>
     
             
 <div class="all-elements">
     <div class="snap-drawers">
+        
+        <script src="menu.js" charset="utf-8"></script>
+        
+        
+        
         <div id="content" class="snap-content">
             <div class="content">
             <div class="header-clear"></div>
@@ -76,55 +73,83 @@
                 <p></p>  
                 
                 <div class="container right-text">
-                    
+                    <h4>DEBUG</h4>
                     <p class="justify">
-						«شیخ جام حکایت می کند...» عنوان تحقیقی ست که در سال ۱۳۹۵ توسط گروهی شش نفره از دانش آموزان مرکز استعداد های درخشان (سمپاد) شهید بهشتی تربت جام پیرامون شیخ احمد جامی (رح) انجام شد.
-						این تحقیق که در پژوهش سرای ثامن الائمه و با کمک های بی دریغ استاد عزیز،  دکتر رضا غوریانی به نتیجه رسید به بررسی حکایات منقول در آثار شیخ جام می پردازد.
+						<center>تعداد مورد علاقه ها: <script>document.write(favscount);</script><center>
+						<center>شماره های داستان ها: <script>printfavs()</script><center>
+						<center>فناوری های استفاده شده در توسعه ی برنامه:<center>
+						<center dir="LTR">HTML 5 | CSS 3 | JS | PGB 7<center>
 					</p>
-					<p>
-						بخش هایی از این مقاله را می توانید در این برنامه مشاهده کنید:
-                    </p>
-					<a class="button button-round one-half-responsive center-text button-xl last-column button-dark" href="pish.html"><i class="fa fa-book"></i> پیشگفتار</a>
-					<p class="justify">
-						مقاله ی «شیخ جام حکایت می کند...» شامل ۴۳ داستان مملو از نکات ادبی و اخلاقی است.
-در این برنامک الکترونیکی شما می توانید از تعدادی از این داستان ها بهره مند شوید:
-                    </p>
-					<a class="button button-round one-half-responsive center-text button-xl last-column button-blue" href="list.html"><i class="fa fa-bars"></i> لیست داستان ها</a>
-					<p class="justify">
-                    </p>
-					<a href="about.html" class="button button-round one-half-responsive center-text button-xl last-column button-dark"><i class="fa fa-exclamation"></i> درباره برنامک</a>
-					<a href="debug.html" class="button button-round one-half-responsive center-text button-xl last-column button-teal" ><i class="fa fa-exclamation"></i>debug</a>
+					<a class="button button-round one-half-responsive center-text button-xl last-column button-blue" href="index.html">بازگشت</a>
 				</div>
             </div> 
         </div>
     </div>  
+    
 </div>
     
     
 <!--Fly up share box and notifications go here -->
 <!--These are the only features that should be placed outside the all-elements class-->
-    <script>
-	document.addEventListener("backbutton", onBackKeyDown, false);
+    
+<div class="share-bottom">
+    <h3>Share Page</h3>
+    <div class="share-socials-bottom">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=http://www.themeforest.net/">
+            <i class="fa fa-facebook facebook-color"></i>
+            Facebook
+        </a>
+        <a href="https://twitter.com/home?status=Check%20out%20ThemeForest%20http://www.themeforest.net">
+            <i class="fa fa-twitter twitter-color"></i>
+            Twitter
+        </a>
+        <a href="https://plus.google.com/share?url=http://www.themeforest.net">
+            <i class="fa fa-google-plus google-color"></i>
+            Google
+        </a>
 
-function onBackKeyDown() {
-    $('.simple-login-modal-content').modal();
-}
-function clickbout() {
-    $('.simple-login-modal-content').modal();
-}
-function exitFromApp()
-             {
-                navigator.app.exitApp();
-             }
-</script>
-<div class="simple-login-modal-content modal-content rounded-modal">
-	<div class="login-modal-wrapper">
-		<h4>خروج</h4>
-		<p>آیا قصد خروج دارید؟</p>
-		<a href="#" class="button-red login-button" onclick="exitFromApp()">خروج</a>
-		<a href="#" class="button-green login-close modal-close">انصراف</a>
-		<div class="clear"></div>
-	</div>
+        <a href="https://pinterest.com/pin/create/button/?url=http://www.themeforest.net/&media=https://0.s3.envato.com/files/63790821/profile-image.jpg&description=Themes%20and%20Templates">
+            <i class="fa fa-pinterest-p pinterest-color"></i>
+            Pinterest
+        </a>
+        <a href="sms:">
+            <i class="fa fa-comment-o sms-color"></i>
+            Text
+        </a>
+        <a href="mailto:?&subject=Check this page out!&body=http://www.themeforest.net">
+            <i class="fa fa-envelope-o mail-color"></i>
+            Email
+        </a>
+        <div class="clear"></div>
+    </div>
+    <a href="#" class="close-share-bottom">Close</a>
+</div>
+    
+<div class="top-notification-1 top-notification bg-blue-dark">
+    <h4>Did you know?</h4>
+    <p>
+        Easy way to make sure your messages get read!
+    </p>
+    <a href="#" class="close-top-notification"><i class="fa fa-times"></i></a>
+</div>
+<div class="bottom-notification-1 bottom-notification bg-green-dark">
+    <h4>Did you know?</h4>
+    <p>
+        Easy way to make sure your messages get read!
+    </p>
+    <a href="#" class="close-bottom-notification"><i class="fa fa-times"></i></a>
+</div> 
+<div class="bottom-notification-2 bottom-notification bg-orange-dark timeout-notification">
+    <h4>Timeout: 5 Seconds</h4>
+    <p>
+        I'll go away on my own after a few seconds!
+    </p>
+</div>
+<div class="top-notification-2 top-notification bg-red-dark timeout-notification">
+    <h4>Timeout: 5 Seconds</h4>
+    <p>
+        I'll go away on my own after a few seconds!
+    </p>
 </div>
     
 </body>
